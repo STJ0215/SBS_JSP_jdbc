@@ -2,7 +2,6 @@ package com.sbs.edu.jdbc;
 
 import java.sql.*;
 
-
 public class jdbc {
 	static Connection conn = null;
 	static Statement stmt = null;
@@ -30,7 +29,7 @@ public class jdbc {
 	}
 	
 	public static int InsertData() {
-		int idx= -1;
+		int idx = -1;
 		String SQL = " INSERT INTO board(name, content) VALUES(?, ?) ";
 		
 		try {
@@ -48,7 +47,7 @@ public class jdbc {
 	}
 	
 	public static int UpdateData() {
-		int idx= -1;
+		int idx = -1;
 		String SQL = " UPDATE board SET name = ?, content = ? " + "WHERE id = 1 ";
 		
 		try {
